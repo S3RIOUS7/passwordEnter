@@ -1,0 +1,26 @@
+.MainContainerLogIn{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .LogInContainer{
+    margin-top: 50px;
+    border-radius: 40px;
+   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width:800px;
+  height: 800px;
+  background-color: aliceblue;
+  .LogInImgLogo{
+    font-size: 50px;
+    margin-left: 15px;
+   
+    color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(165,175,177,1) 23%, rgba(92,50,152,0.835171568627451) 75%);
+  }
+}
+
+}
+
+
+
