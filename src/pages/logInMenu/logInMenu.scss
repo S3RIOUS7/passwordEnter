@@ -18,6 +18,26 @@
    
     color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(165,175,177,1) 23%, rgba(92,50,152,0.835171568627451) 75%);
   }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Выберите подходящий z-index, чтобы модальное окно оказалось поверх других элементов */
+    
+    p {
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      max-width: 400px;
+    }
+  }
 }
 
 }

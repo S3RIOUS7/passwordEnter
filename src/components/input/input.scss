@@ -3,7 +3,6 @@
   margin-bottom: 20px;
   position: relative;
  
-  
   .logoIcon{
     width: 25px;
     height: 20px;
@@ -26,15 +25,12 @@
     outline: none;
   }
 
- 
-
 }
 .search-button {
   margin-left: -50px;
   border: none;
   background-color: white;
   padding: 0;
-  
   padding-top: 4px;
 
   img {
@@ -46,7 +42,6 @@
 
   &:hover img {
     transform: scale(1.3);
-    
   }
 }
 

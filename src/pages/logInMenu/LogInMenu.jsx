@@ -4,13 +4,15 @@ import Input from "../../components/input/Input";
 import emailIcon from '../../assets/img/mail.png'
 import padlock from '../../assets/img/padlock.png'
 import closeEye from '../../assets/img/hide.png'
-
+import Button from "../../components/button/Button";
 
 function LogInMenu () {
   
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  const [modalMessage, setModalMessage] = useState('');
+  const [isModalVisible, setModalVisible] = useState(false);
 
   const emailChange = (value) => {
     setEmail(value);
@@ -22,6 +24,21 @@ function LogInMenu () {
 
   const handleShowPassword = () => {
     setShowPassword(!showPassword);
+  }
+
+  const loginClick= () => {
+    if (email === 's3rious7' && password === '123456789') {
+      setModalMessage('Вход выполнен.');
+      setModalVisible(true);
+      setEmail('')
+      setPassword('')
+    } else {
+      setModalMessage('Вход не выполнен.');
+      setModalVisible(true);
+    }
+  }
+  const closeModal = () => {
+    setModalVisible(false);
   }
 
   return(
@@ -51,10 +68,25 @@ function LogInMenu () {
               onButtonClick={handleShowPassword}
               />
               </div>
+              
+              <Button 
+              buttonText='Login'
+              onButtonClick={loginClick}
+              />
+              {isModalVisible && (
+              <div className="modal" onClick={closeModal}>
+              <p>{modalMessage}</p>
+              </div>
+            )}
+      
+           
+
           </div>
      </div>
      </div>
      
+   
+
     </Fragment>
 
   )
