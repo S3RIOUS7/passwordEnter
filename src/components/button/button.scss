@@ -1,0 +1,15 @@
+.buttonContainer{
+  border: none;
+  background-color:rgba(216, 204, 233, 0.835);
+  color:rgba(45, 16, 87, 0.835);
+  min-width: 200px;
+  font-size: 20px;
+  &:hover{
+    opacity: 0.6;
+    background-color: rgba(92,50,152,0.835171568627451);
+    color:rgba(190, 235, 154, 0.835);
+  }
+  &:focus {
+    outline: none;
+  }
+}

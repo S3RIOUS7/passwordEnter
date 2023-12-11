@@ -1,10 +1,11 @@
 import { Fragment } from "react";
+import './button.scss'
 
 
 const Button = ({ onButtonClick, buttonText }) => {
   return (
     <Fragment>
-      <button onClick={onButtonClick} >{buttonText}</button>
+      <button className="buttonContainer" onClick={onButtonClick} >{buttonText}</button>
     </Fragment>
   )
 }
