@@ -54,10 +54,9 @@ function LogInMenu () {
     <Fragment>
     <div className="MainContainerLogIn">
       <div className="LogInContainer">
-          <div className="LogInImgLogo">Welcome <br/>to our site</div>
+          <div className="LogInImgLogo">Welcome to our site</div>
           <div className="LogInInputMenu">
             <div className="LogInInputName">
-          
           <Input 
             label="Your Email"
             logoIcon={emailIcon}
@@ -78,11 +77,11 @@ function LogInMenu () {
             onButtonClick={handleShowPassword}
             />
           </div>
-              
+              <div className="ButtonclassContainer">
               <Button 
               buttonText='Login'
               onButtonClick={loginClick}
-              />
+              /></div>
 
               {isModalVisible && (
             <div className="modal" onClick={closeModal}>
